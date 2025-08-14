@@ -1,0 +1,177 @@
+.specs-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.banner-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.specs-content {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.specs-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.specs-info {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specs-info h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.specs-info > p {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.nutrition-table {
+  margin: 1.5rem 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  table-layout: fixed;
+}
+
+.nutrition-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.8fr 1.5fr 1fr 0.8fr;
+  background-color: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.nutrition-header .nutrition-cell {
+  font-weight: 600;
+  color: #1a202c;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  border-right: 1px solid #e2e8f0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nutrition-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.8fr 1.5fr 1fr 0.8fr;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #fff;
+}
+
+.nutrition-row:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.nutrition-row:last-child {
+  border-bottom: none;
+}
+
+.nutrition-cell {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #2d3748;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nutrition-cell:first-child {
+  font-weight: 500;
+  color: #1a202c;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.nutrition-cell:last-child {
+  border-right: none;
+}
+
+.nutrition-note {
+  font-size: 0.85rem;
+  color: #718096;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+
+  .banner-section {
+    height: 250px;
+  }
+
+  .nutrition-header,
+  .nutrition-row {
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+  }
+  
+  .nutrition-cell {
+    font-size: 0.85rem;
+    padding: 0.75rem 0.25rem;
+    min-height: 2.5rem;
+  }
+
+  .nutrition-cell:first-child {
+    padding-left: 0.5rem;
+  }
+
+  .nutrition-note {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+} 

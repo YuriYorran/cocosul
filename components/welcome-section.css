@@ -1,0 +1,24 @@
+.welcome-section {
+  background-color: var(--brown-bg);
+  padding: 20px 0;
+  border-top: 4px solid var(--brown-lighter);
+}
+
+.welcome-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-content p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--brown);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .welcome-content p {
+    font-size: 18px;
+  }
+}

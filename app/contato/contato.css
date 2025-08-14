@@ -1,0 +1,150 @@
+.contact-page {
+  background: linear-gradient(135deg, var(--brown-bg) 0%, #f0f8e6 100%);
+  min-height: calc(100vh - 80px);
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-light) 0%, var(--brown) 50%, var(--green-dark) 100%);
+}
+
+.contact-page-header {
+  padding: 20px 0 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-page-header .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-page-header h1 {
+  color: var(--green-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.contact-page-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--brown);
+}
+
+.contact-page-header .header-image {
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 60px;
+  opacity: 0.8;
+}
+
+.contact-page-header .header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-page-header p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+}
+
+.contact-section::before {
+  display: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-page {
+    padding-top: 120px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .contact-page-header {
+    padding: 15px 0 30px;
+    margin-bottom: 10px;
+  }
+
+  .contact-page-header h1 {
+    font-size: 2rem;
+    padding-top: 15px;
+  }
+
+  .contact-page-header .header-image {
+    max-width: 60px;
+    bottom: -50px;
+  }
+
+  .contact-page-header p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .contact-section {
+    padding: 15px;
+    margin: 0 10px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .contact-page {
+    padding-top: 100px;
+  }
+
+  .contact-page-header {
+    padding: 10px 0 20px;
+    margin-bottom: 5px;
+  }
+
+  .contact-page-header h1 {
+    font-size: 1.75rem;
+    padding-top: 10px;
+  }
+
+  .contact-page-header .header-image {
+    max-width: 50px;
+    bottom: -40px;
+  }
+
+  .contact-page-header p {
+    font-size: 0.9rem;
+  }
+
+  .contact-section {
+    padding: 10px;
+    margin: 0 5px;
+  }
+} 
