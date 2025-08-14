@@ -49,7 +49,7 @@ export default function CocoRaladoMedioDesidratadoPage() {
                   <div className="usage-card">
                     <div className="usage-image">
                       <Image
-                        src="/manzana.jpg"
+                        src="/WhatsApp Image 2025-08-14 at 17.36.42.jpeg"
                         alt="Aplicação em Indústria Alimentícia"
                         width={600}
                         height={450}
