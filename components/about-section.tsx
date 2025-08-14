@@ -1,3 +1,4 @@
+import Image from "next/image"
 import "./about-section.css"
 
 export default function AboutSection() {
@@ -15,7 +16,14 @@ export default function AboutSection() {
 
         <div className="about-content">
           <div className="about-image">
-            <img src="/coco_small.png" alt="Fábrica da CocoSul" />
+            <Image
+              src="/coco_small.png"
+              alt="Fábrica da CocoSul"
+              width={600}
+              height={400}
+              className="about-factory-image"
+              priority
+            />
           </div>
 
           <div className="about-text">
