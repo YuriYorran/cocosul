@@ -15,7 +15,7 @@ export default function AboutSection() {
 
         <div className="about-content">
           <div className="about-image">
-            <img src="/WhatsApp Image 2025-08-14 at 17.36.42.jpeg" alt="Fábrica da CocoSul" />
+            <img src="/coco_small.png" alt="Fábrica da CocoSul" />
           </div>
 
           <div className="about-text">

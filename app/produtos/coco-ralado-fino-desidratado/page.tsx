@@ -49,7 +49,7 @@ export default function CocoRaladoFinoDesidratadoPage() {
                   <div className="usage-card">
                     <div className="usage-image">
                       <Image
-                        src="/WhatsApp Image 2025-08-14 at 17.36.42.jpeg"
+                        src="/coco_small.png"
                         alt="Aplicação em Indústria Alimentícia"
                         width={600}
                         height={450}
